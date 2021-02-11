@@ -30,15 +30,99 @@
 /* TIP: Laat bovenstaande code staan */
 
 /* dobbelsteen1 */
-
+.dobbelsteen1{
+    align-items: center;
+    justify-content: center;
+}
 /* dobbelsteen2 */
+.links{
+    background-color: lightblue;
+}
+ .rechts{
+    background-color: lightskyblue;
+}
+.midden{
+    background-color: lightslategray;
+}
 
+.dobbelsteen2 .dobbelsteen3{
+    display: flex;
+}
+
+.dobbelsteen2 .links{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.dobbelsteen2 .rechts{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 /* dobbelsteen3 */
+.dobbelsteen3 .links, .dobbelsteen3 .midden, .dobbelsteen3 .rechts{
+    display: flex;
+}
 
+.dobbelsteen3 .links{
+    align-items: flex-start;
+}
+
+.dobbelsteen3 .midden{
+    align-items: center;
+}
+
+.dobbelsteen3 .rechts{
+    align-items: flex-end;    
+}
 /* dobbelsteen4 */
+.dobbelsteen4{
+    flex-direction: row;
+}
 
+.dobbelsteen4 .links, .dobbelsteen4 .rechts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.dobbelsteen4 .rechts{
+    align-items: flex-end;
+}
+
+.dobbelsteen4 .links{
+    align-items: start;
+}
 /* dobbelsteen5 */
+.dobbelsteen5 .links, .dobbelsteen5 .midden, .dobbelsteen5 .rechts{
+    display: flex;
+    flex-direction: column;
+}
 
+.dobbelsteen5 .links, .dobbelsteen5 .rechts{
+    justify-content: space-between;
+}
+
+.dobbelsteen5 .rechts{
+    align-items: flex-end;
+}
+
+.dobbelsteen5 .midden{
+    align-items: center;
+    justify-content: center;
+}
 /* dobbelsteen6 */
+.dobbelsteen6 .links, .dobbelsteen6 .rechts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dobbelsteen6 .rechts{
+    align-items: flex-end;
+}
 
 
