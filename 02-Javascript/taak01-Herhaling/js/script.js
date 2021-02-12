@@ -1,2 +1,1 @@
-let strNaam;
-let boolNaamKlopt;
+

@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <script> let strNaam = prompt("Hoe heet je?");
+           let boolNaamKlopt = confirm("Heet je " + strNaam + "?" );
+
+           if (boolNaamKlopt==true) {
+             alert("Welkom " + strNaam);
+            }
+
+           else if (boolNaamKlopt==false) 
+             confirm("Nog een keer: Heet je echt " + strNaam + "?"); 
+           
+           else(boolNaamKlopt==false)
+           alert("Ok, evengoed welkom!")     
+           
+
+           
     
+ 
+
+
+</script> 
     <script src="js/script.js"></script>
 </body>
 </html>
