@@ -11,4 +11,34 @@ function showRandomNumber1(){
     return randomGetal;
 }
 
+function showRandomNumber2(){
+    let randomGetal = makeRandomNumber()
+    document.querySelector(".getal2").innerHTML = randomGetal;
+    return randomGetal;
+}
+
 getal1 = showRandomNumber1();
+getal2 = showRandomNumber2();
+
+function geefAntwoord(checkValue){
+    if(checkValue=="hoger"){
+        if(getal1 > getal2){
+            score++;
+        }
+        else{
+            score--;
+        }
+    } else if(checkValue=="lager"){
+        if(getal1 < getal2){
+            score++;
+        }
+        else{
+            score--;
+        }
+    }
+    document.getElementById("score").innerHTML = score;
+    getal1 = showRandomNumber1();
+    getal2 = showRandomNumber2();
+}
+
+
