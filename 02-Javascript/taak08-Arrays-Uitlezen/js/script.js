@@ -11,25 +11,35 @@ topFilms = [
     "Lawrence of Arabia"
 ];
 
-document.querySelector(".film1-ranking").innerHTML = 1;
-document.querySelector(".film1-naam").innerHTML = topFilms[0];
-document.querySelector(".film2-ranking").innerHTML = 2;
-document.querySelector(".film2-naam").innerHTML = topFilms[1];
-document.querySelector(".film3-ranking").innerHTML = 3;
-document.querySelector(".film3-naam").innerHTML = topFilms[2];
-document.querySelector(".film4-ranking").innerHTML = 4;
-document.querySelector(".film4-naam").innerHTML = topFilms[3];
-document.querySelector(".film5-ranking").innerHTML = 5;
-document.querySelector(".film5-naam").innerHTML = topFilms[4];
-document.querySelector(".film6-ranking").innerHTML = 6;
-document.querySelector(".film6-naam").innerHTML = topFilms[5];
-document.querySelector(".film7-ranking").innerHTML = 7;
-document.querySelector(".film7-naam").innerHTML = topFilms[6];
-document.querySelector(".film8-ranking").innerHTML = 8;
-document.querySelector(".film8-naam").innerHTML = topFilms[7];
-document.querySelector(".film9-ranking").innerHTML = 9;
-document.querySelector(".film9-naam").innerHTML = topFilms[8];
-document.querySelector(".film10-ranking").innerHTML = 10;
-document.querySelector(".film10-naam").innerHTML = topFilms[9];
+var i;
+
+for(i=0; i<topFilms.length;i++){
+    document.getElementsByClassName("film-ranking")[i].innerHTML = i + 1;
+    document.getElementsByClassName("film-naam")[i].innerHTML = topFilms[i];
+}
+
+
+function kiesFavorieteFilm(){
+let selFilm = prompt("Wat is je favoriete film?")
+    if(selFilm>1 && selFilm<=10){
+        console.log(topFilms[selFilm - 1]);
+        resetCell();
+        document.getElementsByClassName("film-naam")[selFilm - 1].style.backgroundColor = 'Blue';
+        document.getElementsByClassName("film-naam")[selFilm - 1].style.color = 'White';
+        
+    }
+     
+    else {
+        alert("fout!!")
+    }
+}
+
+function resetCell(){
+    for(i=0; i<topFilms.length;i++){
+        document.getElementsByClassName("film-naam")[i].style.color = 'black'
+        document.getElementsByClassName("film-naam")[i].style.backgroundColor = 'lightskyblue'
+    }
+}
+
 
 
