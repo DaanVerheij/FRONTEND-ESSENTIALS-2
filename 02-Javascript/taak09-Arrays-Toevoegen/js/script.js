@@ -13,11 +13,15 @@ topFilms = [
 
 eigenTopFilms = [];
 
+
 //met deze for-loop word de ordered list gevuld met film namen
 for(i = 0; i < topFilms.length; i++){
     document.querySelector(".imdb-film" + (i+1)).innerHTML = topFilms[i];
 }
 
 function kiesFilm(){
-
+        let selFilm = prompt("Welke film staat op plek 1?")
+            if(selFilm>1 && selFilm<=10){
+                console.log(topFilms[selFilm - 1]); 
+            }
 }
