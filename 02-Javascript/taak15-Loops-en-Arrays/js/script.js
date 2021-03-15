@@ -22,3 +22,8 @@ for (let i = 0; i < spelersScore.length; i++) {
 }
 
 //Schrijf hieronder je code
+
+for (let i = 0; i < spelersScore.length; i++) {
+    spelersScore[i] += 1;
+    console.log(rondePunten[i]);
+}
